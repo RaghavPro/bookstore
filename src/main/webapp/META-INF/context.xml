@@ -1,0 +1,20 @@
+<Context>
+
+    <!-- maxActive: Maximum number of jdbc connections in pool. -->
+
+    <!-- maxIdle: Maximum number of idle jdbc connections to retain in pool. -->
+
+    <!-- maxWait: Maximum time to wait for a jdbc connection to become available in ms. -->
+
+    <!-- username and password: MySQL username and password for jdbc connections.  -->
+
+    <!-- driverClassName: Class name for the driver. -->
+
+    <!-- url: The JDBCService connection url for connecting to the MySQL jdbc.  -->
+
+    <Resource name="jdbc/bookhive_db" auth="Container" type="javax.sql.DataSource"
+              maxActive="100" maxIdle="10" maxWait="10000"
+              username="" password="" driverClassName="org.postgresql.Driver"
+              url="jdbc:postgresql://localhost:5432/bookhive_db"/>
+
+</Context>
